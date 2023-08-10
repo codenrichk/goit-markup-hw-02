@@ -1,14 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap');
 
 :root {
   --color-background: #e5e5e5;
   --color-primary: #2196f3;
+  --color-secundary: #2f303a;
   --color-text: #212121;
   --color-text-contact: #757575;
 }
 body {
-  font-family: "Roboto", "Raleway", sans-serif;
+  font-family: 'Roboto', 'Raleway', sans-serif;
   background-color: var(--color-background);
   color: var(--color-text);
   font-size: 18px;
@@ -17,7 +18,7 @@ body {
 }
 
 .logo {
-  font-family: "Raleway";
+  font-family: 'Raleway';
   color: var(--color-primary);
   text-decoration: none;
   font-weight: 700;
@@ -29,7 +30,8 @@ li {
   color: var(--color-text);
   text-decoration: none;
 }
-.navigation-list-items-item:hover {
+.navigation-list-items-item:hover,
+.navigation-list-items-item:focus {
   color: var(--color-primary);
 }
 .dataright-item-email {
@@ -38,10 +40,12 @@ li {
 .dataright-item-phone {
   color: var(--color-text-contact);
 }
-.dataright-item-email:hover {
+.dataright-item-email:hover,
+.dataright-item-email:focus {
   color: var(--color-primary);
 }
-.dataright-item-phone:hover {
+.dataright-item-phone:hover,
+.dataright-item-phone:focus {
   color: var(--color-primary);
 }
 .buttons-item-button {
@@ -49,8 +53,25 @@ li {
   color: var(--color-text);
   border-radius: 10x;
 }
-.buttons-item-button:hover {
+.buttons-item-button:hover,
+.buttons-item-button:focus {
   background-color: var(--color-primary);
   transform: scale(1.1);
+  color: #fff;
+}
+.filter-portfolio {
+  visibility: hidden;
+}
+
+.container {
+  background-color: var(--color-secundary);
+  width: auto;
+  height: 600px;
+}
+.container h1 {
+  color: #fff;
+}
+.container .buttons-item-button-index {
+  background-color: var(--color-primary);
   color: #fff;
 }
